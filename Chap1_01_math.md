@@ -103,11 +103,56 @@ n×k
 , thì
 rank(A) + rank(B) − n ≤ rank(AB)
 
+## Ma trận trực giao
+**Định nghĩa**: Ma trận trực giao là ma trận thỏa mãn điều kiện 
+
+![image](https://user-images.githubusercontent.com/45547213/61589271-e03b2d80-abd1-11e9-9344-08cf1da9ccaf.png)
+
+tức là ma trận chuyển vị của A cũng là ma trận nghịch đảo của A
+
+ma trận chuyển vị là ma trận biến đổi từ ngang thành dọc của ma trận cũ
+
+ma trận nghịch đảo là khi nhân với ma trận gốc ra ma trận đơn vị
+
+**Tính chất**:
+
+![image](https://user-images.githubusercontent.com/45547213/61589327-8f780480-abd2-11e9-966b-62cb521063d2.png)
+
+## Trị riêng và vector riêng
+**Định nghĩa**: 
 
 
+![image](https://user-images.githubusercontent.com/45547213/61589458-3c9f4c80-abd4-11e9-9c74-15b3bf4b7bde.png)
+
+**Tính chất**:
+
+1. Nếu x là một vector riêng của A ứng với λ thì kx, ∀k 6= 0 cũng là vector riêng ứng với
+trị riêng đó. Nếu x1, x2 là hai vector riêng ứng với cùng trị riêng λ, thì tổng của chúng
+cũng là một vector ứng với trị riêng đó. Từ đó suy ra tập hợp các vector riêng ứng với
+một trị riêng của một ma trận vuông tạo thành một không gian vector con, thường được
+gọi là không gian riêng (eigenspace) ứng với trị riêng đó.
+2. Mọi ma trận vuông bậc n đều có n trị riêng (kể cả lặp) và có thể là các số phức.
+3. Tích của tất cả các trị riêng của một ma trận bằng định thức của ma trận đó. Tổng tất
+cả các trị riêng của một ma trận bằng tổng các phần tử trên đường chéo của ma trận đó.
+4. Phổ của một ma trận bằng phổ của ma trận chuyển vị của nó.
+5. Nếu A, B là các ma trận vuông cùng bậc thì pAB(t) = pBA(t). Điều này nghĩa là, mặc
+dù tích của hai ma trận không có tính chất giao hoán, đa thức đặc trưng của AB và BA
+là như nhau. Tức phổ của hai tích này là trùng nhau.
+6. Với ma trận đối xứng (hoặc tổng quát, Hermitian), tất cả các trị riêng của nó đều là các
+số thực. Thật vậy, giả sử λ là một trị riêng của một ma trận Hermitian A và x là một
+vector riêng ứng với trị riêng đó. 
 
 
-
+**Cách tìm trị riêng**
+-Tìm det(A- λ*I)
+ với I là ma trận đơn vị
+ 
+ - Cho det bằng 0 rồi tìm ra λ đó là trị riêng
+ 
+ ## Chéo hóa ma trận
+ - tìm điều kiện của ma trận vuông cấp n
+  + phải có n trị riêng nếu ko có n trị riêng thì ko treo hóa được
+  
 
 
 
