@@ -144,16 +144,36 @@ vector riêng ứng với trị riêng đó.
 
 
 **Cách tìm trị riêng**
--Tìm det(A- λ*I)
+ 
+ - Tìm det(A- λ*I)
  với I là ma trận đơn vị
  
  - Cho det bằng 0 rồi tìm ra λ đó là trị riêng
- 
+
+**Cách tím vector riêng**
+
+![image](https://user-images.githubusercontent.com/45547213/61611947-61083100-ac87-11e9-85ea-6e9251716c70.png)
+
  ## Chéo hóa ma trận
  - tìm điều kiện của ma trận vuông cấp n
   + phải có n trị riêng nếu ko có n trị riêng thì ko treo hóa được
-  
+  + phải có n vector riêng
+  + phải là 1 ma trận vuông
 
+ - Cách làm
+ Giả sử A là ma trận chéo hóa được. Khi đó ta tìm ma trận C sao cho C^{-1}AC  là ma trận đường chéo như thế nào?
+
+Điều này đã được mô tả chi tiết trong cuốn Toán cao cấp tập 1 của Nguyễn Đình Trí, và những cuốn sách tương tự. Ở đây, tôi cung cấp thêm chi tiết.
+
+Cấu tạo của C gồm n cột, mỗi cột là một vector riêng của A, sao cho n cột này phải độc lập tuyến tính. Để tiện trình bày chứng minh, tôi xét trường hợp n=3. Khi đó ta viết C=[C_1|C_2|C_3] với C_i là các cột của ma trận C cỡ 3\times 3.
+
+Nhắc lại là các cột C_i  là vector riêng của A ứng với giá trị riêng \lambda_i.
+
+Ta có AC=[AC_1|AC_2|AC_3] = [\lambda_1C_1|\lambda_2 C_2| \lambda_3 C_3]. Từ đó suy ra C^{-1}AC = [\lambda_1 C^{-1}C_1|\lambda_2 C^{-1}C_2|\lambda_3 C^{-1}C_3].
+
+Vậy C^{-1}C_i bằng bao nhiêu? Rất đơn giản, nhận xét: I = C^{-1}C = [C^{-1}C_1|C^{-1}C_2|C^{-1}C_3] với I là ma trận đồng nhất.
+
+Như vậy, C^{-1}C_1=\begin{bmatrix}1\\ 0\\ 0\end{bmatrix} và tương tự với các cột còn lại. Cũng từ điều này, ta đã chứng minh xong kết quả C^{-1}AC = \begin{bmatrix}\lambda_1 &0 &0 \\ 0&\lambda_2 &0 \\ 0 & 0 &\lambda_3\end{bmatrix}.
 
 
 
