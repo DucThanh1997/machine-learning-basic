@@ -50,7 +50,44 @@ chúng ta dùng Mean Absolute Error
 
 Cả RMSE và MAE đều là cách để đo khoảng cách giữa hai vectơ: vectơ dự đoán và vectơ của các giá trị đích.
 
-### Kiểm tra các giả định
+## Sờ mó vào dữ liệu sơ khai
+
+```
+import pandas as pd
+path = "C:\\Users\\Thanh\\Downloads\\california-housing-prices\\housing.csv"
+housing = pd.read_csv(path)
+
+housing.head(): In ra năm bản ghi đầu
+housing.info(): In ra các kiểu dữ liệu trong bảng có
+housing.describe(): In ra mấy cái count, min, max, mean của tập dữ liệu
+```
+
+Hoặc bạn có thể in ra mô hình nhìn cho ló trực quan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
