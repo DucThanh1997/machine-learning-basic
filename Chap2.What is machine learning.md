@@ -34,7 +34,7 @@ Trong supervised learning, training data bạn đưa cho thuật toán bao gồm
 
 1 task cơ bản của supervised learning là phân loại như bộ lọc mail rác
 
-1 task khác là dự đoán, người ta cho các thuộc tính sau đó cho nó học lần sau nó tự biết  
+1 task khác là dự đoán (regression task), người ta cho các thuộc tính sau đó cho nó học lần sau nó tự biết  
 
 ![image](https://user-images.githubusercontent.com/45547213/61622717-899c2500-ac9f-11e9-831f-31bc736e68c3.png)
 
